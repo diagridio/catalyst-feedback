@@ -15,22 +15,10 @@ We very much value user feedback and will prioritize fixing user-reported bugs a
 
 For requesting new features, we encourage you to open a feature request discussion as described below.
 
-## Github Discussions
+## Diagrid Community
 
-Leverage GitHub discussions to ask questions, share content, and provide feedback. The following discussion channels are available today:
+To connect with the Diagrid team and other Catalyst users, [join](https://diagrid.ws/community) the Diagrid community. Feel free to ask questions, share use cases, and create new discussion topics!
 
-### General discussion channels
-
-* ❓ [Help](https://github.com/diagridio/catalyst-feedback/discussions/categories/help): Have questions for the Catalyst team? Unable to find something in the documentation? Reach out!
-* 🙌 [Show and Tell](https://github.com/diagridio/catalyst-feedback/discussions/categories/show-and-tell): Share content you've built or use cases you've discovered with the Catalyst community
-* 💡 [Feature Requests](https://github.com/diagridio/catalyst-feedback/discussions/categories/feature-requests): Discuss ideas for product enhancements and request support for additional capabilities
-
-### User experience discussion channels
-
-* [Catalyst Console](https://github.com/diagridio/catalyst-feedback/discussions/categories/catalyst-console): Discussion focused around the Catalyst user interface 
-* [Diagrid CLI](https://github.com/diagridio/catalyst-feedback/discussions/categories/diagrid-cli): Discussion focused around the Diagrid CLI 
-* [Documentation](https://github.com/diagridio/catalyst-feedback/discussions/categories/documentation): Discussion focused around the Catalyst documentation 
-* [Developing with Catalyst](https://github.com/diagridio/catalyst-feedback/discussions/categories/developing-with-catalyst): Discussion questions around getting started on the Catalyst platform, configuring the SDKs etc.
 
 ## Additional Resources
 
