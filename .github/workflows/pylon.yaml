@@ -17,7 +17,11 @@ jobs:
         REQUESTER_NAME: ${{ github.event.issue.user.login }}
         TITLE: ${{ github.event.issue.title }}
         BODY_HTML: ${{ github.event.issue.body }}
+        DEFAULT_EMAIL: "gh-email-is-private@diagrid.io"
       run: |
+        if [ -z "$REQUESTER_EMAIL" ]; then
+        REQUESTER_EMAIL=$DEFAULT_EMAIL
+        fi
         curl --request POST \
           --url https://api.usepylon.com/issues \
           --header "Authorization: Bearer $PYLON_API_TOKEN" \
@@ -29,7 +33,9 @@ jobs:
           "requester_name": "'"$REQUESTER_NAME"'",
           "requester_avatar_url": "",
           "title": "'"$TITLE"'",
-          "body_html": "'"$BODY_HTML"'",
-          "assignee_id": "",
-          "priority": ""
+          "body_html": "'"<p>$BODY_HTML</p>"'",
+          "priority": "low",
+          "destination_metadata": {
+            "destination": "internal"
+            }
         }'
