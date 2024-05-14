@@ -28,7 +28,6 @@ jobs:
           --header 'Content-Type: application/json' \
           --data '{
           "account_id": "'"$ACCOUNT_ID"'",
-          "requester_id": "'"$REQUESTER_EMAIL"'",
           "requester_email": "'"$REQUESTER_EMAIL"'",
           "requester_name": "'"$REQUESTER_NAME"'",
           "requester_avatar_url": "",
