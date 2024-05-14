@@ -3,6 +3,7 @@ name: Submit Issue to Pylon
 on:
   issues:
     types: [opened]
+  pull_request:
 
 jobs:
   submit-issue:
@@ -13,10 +14,30 @@ jobs:
       env:
         PYLON_API_TOKEN: ${{ secrets.PYLON_API_TOKEN }}
         ACCOUNT_ID: 4c2d8a51-241b-4764-ac17-118c7aca70be
-        REQUESTER_EMAIL: ${{ github.event.issue.user.email }}
-        REQUESTER_NAME: ${{ github.event.issue.user.login }}
-        TITLE: ${{ github.event.issue.title }}
-        BODY_HTML: ${{ github.event.issue.body }}
+        # REQUESTER_EMAIL: ${{ github.event.issue.user.email }}
+        # REQUESTER_NAME: ${{ github.event.issue.user.login }}
+        # TITLE: ${{ github.event.issue.title }}
+        # BODY_HTML: ${{ github.event.issue.body }}
+        REQUESTER_EMAIL: "ahmed@diagrid.io"
+        REQUESTER_NAME: "Ahmed Alhameedawi"
+        TITLE: "Ahmed testing the Pylon API"
+        BODY_HTML: "no action needed, just testing the API"
+    #   run: |
+    #     curl --request POST \
+    #       --url https://api.usepylon.com/issues \
+    #       --header "Authorization: Bearer $PYLON_API_TOKEN" \
+    #       --header 'Content-Type: application/json' \
+    #       --data '{
+    #       "account_id": "'"$ACCOUNT_ID"'",
+    #       "requester_id": "'"$REQUESTER_EMAIL"'",
+    #       "requester_email": "'"$REQUESTER_EMAIL"'",
+    #       "requester_name": "'"$REQUESTER_NAME"'",
+    #       "requester_avatar_url": "",
+    #       "title": "'"$TITLE"'",
+    #       "body_html": "'"$BODY_HTML"'",
+    #       "assignee_id": "",
+    #       "priority": ""
+    #     }'
       run: |
         curl --request POST \
           --url https://api.usepylon.com/issues \
