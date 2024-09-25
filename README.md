@@ -23,5 +23,5 @@ To connect with the Diagrid team and other Catalyst users, [join](https://diagri
 ## Additional Resources
 
 - Visit the [Catalyst Docs](https://docs.diagrid.io/catalyst)
-- Get up and running using [Catalyst Samples](https://github.com/diagridio/catalyst-samples)
+- Get up and running using [Catalyst Quickstarts](https://github.com/diagridio/catalyst-quickstarts)
 - Check out video content on the [Diagrid YouTube Channel](https://www.youtube.com/channel/UC72gm3SW9vuu6_TDukfd_Tg)
